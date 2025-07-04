@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Owen - By Osama </title>
+  <title>Philosophy Bot - By Owen</title>
 
+  <!-- سكربت البوت -->
   <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
 
   <style>
-    /* تعيين الجسم والـ HTML لملء الشاشة */
     html, body {
       margin: 0;
       padding: 0;
@@ -18,7 +18,6 @@
       font-family: "fira", sans-serif;
     }
 
-    /* الحاوية الخاصة بالبوت تأخذ كامل الشاشة */
     #webchat {
       position: fixed;
       top: 0;
@@ -32,12 +31,10 @@
       z-index: 9999;
     }
 
-    /* إخفاء زر الفاب */
     #webchat .bpFab {
       display: none;
     }
 
-    /* جعل واجهة البوت تملأ الحاوية */
     #webchat .bpWebchat {
       position: unset !important;
       width: 100% !important;
@@ -59,11 +56,11 @@
       });
 
       window.botpress.init({
-        botId: "ac8fba90-d124-49a7-9d5a-914f748f821a",
+        botId: "48b112fc-e380-4b1e-8db9-227caf54be39",
         configuration: {
           version: "v1",
-          botName: "Owen",
-          botAvatar: "https://files.bpcontent.cloud/2025/06/26/11/20250626113857-WISG4IMM.png",
+          botName: "Philosophy",
+          botDescription: "",
           website: {
             title: "https://owen-arch.github.io/O/",
             link: "https://owen-arch.github.io/O/"
@@ -75,17 +72,17 @@
           phone: {},
           termsOfService: {},
           privacyPolicy: {},
-          color: "#DC143C",
+          color: "#075B5E",
           variant: "solid",
           headerVariant: "glass",
           themeMode: "light",
           fontFamily: "fira",
-          radius: 2,
-          feedbackEnabled: false,
+          radius: 2.5,
+          feedbackEnabled: true,
           footer: "[Owen](https://owen-arch.github.io/O/)",
           allowFileUpload: true
         },
-        clientId: "21030871-db4b-4c12-ac34-330dff280174",
+        clientId: "a420acc8-4ac7-4718-91d1-4da882ab3e95",
         selector: "#webchat"
       });
     });
